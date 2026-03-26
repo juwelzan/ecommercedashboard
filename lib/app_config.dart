@@ -1,5 +1,5 @@
 import 'package:ecommercedashboard/core/theme/app_theme.dart';
-import 'package:ecommercedashboard/feature/dashboard_screen/ui/dashboard_screen.dart';
+import 'package:ecommercedashboard/feature/main_screen/ui/main_screen.dart';
 import 'package:ecommercedashboard/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -20,9 +20,9 @@ class AppConfig extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
       ],
       supportedLocales: [Locale('en'), Locale('bn')],
-      locale: Locale('en'),
+      locale: Locale('bn'),
       debugShowCheckedModeBanner: false,
-      home: DashboardScreen(),
+      home: MainScreen(),
     );
   }
 }

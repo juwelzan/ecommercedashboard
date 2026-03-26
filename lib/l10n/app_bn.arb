@@ -1,3 +1,13 @@
 {
-  "name" : "Rana"
+  "orderid" : "অর্ডার ID",
+  "customer": "কাস্টমার",
+  "status" : "স্ট্যাটাস",
+  "weeklydata" : "সাপ্তাহিক ডেটা",
+  "sunday" : "রবি",
+  "monday" :"সোম",
+  "tuesday" :"মঙ্গ " ,
+  "wednesday" : "বুধ",
+  "thursday" : "বৃহ",
+  "friday" : "শুক্র",
+  "saturday" : "শনি"
 }
