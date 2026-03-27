@@ -1,4 +1,4 @@
-import 'package:ecommercedashboard/feature/main_screen/widgets/custom_bottomNavigationBar.dart';
+import 'package:ecommercedashboard/feature/main_screen/widgets/custom_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -18,7 +18,11 @@ class _MainScreeState extends State<MainScreen> {
             bottom: 0,
             left: 0,
             right: 0,
-            child: CustomBottomnavigationbar(),
+            child: CustomBottomnavigationbar(
+              onTap: (pageIndex) {
+                print(pageIndex);
+              },
+            ),
           ),
         ],
       ),
