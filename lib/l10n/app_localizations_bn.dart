@@ -40,4 +40,13 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get saturday => 'শনি';
+
+  @override
+  String get dashboard => 'ড্যাশবোর্ড';
+
+  @override
+  String get order => 'অর্ডার';
+
+  @override
+  String get product => 'প্রোডাক্ট';
 }

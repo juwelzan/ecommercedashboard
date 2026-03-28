@@ -14,11 +14,13 @@ class DashboardScreen extends StatefulWidget {
   State<DashboardScreen> createState() => _DashboardScreenState();
 }
 
-class _DashboardScreenState extends State<DashboardScreen> {
+class _DashboardScreenState extends State<DashboardScreen>
+    with AutomaticKeepAliveClientMixin {
   int index = 0;
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
@@ -102,4 +104,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       ),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }

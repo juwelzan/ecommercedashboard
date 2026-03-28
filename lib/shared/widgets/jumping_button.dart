@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class JumpingButton extends StatefulWidget {
   final double? height, width, verticalPadding, horizontalPaddinng;
-  final BorderRadiusGeometry? bborderRadius;
+  final BorderRadiusGeometry? borderRadius;
   final BoxBorder? border;
   final List<BoxShadow>? boxShadow;
   final Color? color;
@@ -16,7 +16,7 @@ class JumpingButton extends StatefulWidget {
     super.key,
     this.height,
     this.width,
-    this.bborderRadius,
+    this.borderRadius,
     this.verticalPadding,
     this.horizontalPaddinng,
     this.border,
@@ -53,7 +53,14 @@ class _JumpingButtonState extends State<JumpingButton> {
         tween: Tween(begin: 1, end: isClick ? 0.8 : 1),
         duration: Duration(milliseconds: 100),
         builder: (context, value, child) {
-          return Transform.scale(scale: value, child: child);
+          return Transform.scale(
+            scale: value,
+            child: AnimatedOpacity(
+              duration: Duration(milliseconds: 100),
+              opacity: isClick ? 0.3 : 1,
+              child: child,
+            ),
+          );
         },
 
         child: Container(
@@ -65,7 +72,7 @@ class _JumpingButtonState extends State<JumpingButton> {
           ),
           decoration: BoxDecoration(
             color: widget.color ?? Colors.deepPurple,
-            borderRadius: widget.bborderRadius ?? BorderRadius.circular(10),
+            borderRadius: widget.borderRadius ?? BorderRadius.circular(10),
             border: widget.border,
             boxShadow: widget.boxShadow,
             gradient: widget.gradient,

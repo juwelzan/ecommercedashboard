@@ -163,6 +163,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sat'**
   String get saturday;
+
+  /// No description provided for @dashboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Dashboard'**
+  String get dashboard;
+
+  /// No description provided for @order.
+  ///
+  /// In en, this message translates to:
+  /// **'Order'**
+  String get order;
+
+  /// No description provided for @product.
+  ///
+  /// In en, this message translates to:
+  /// **'Product'**
+  String get product;
 }
 
 class _AppLocalizationsDelegate

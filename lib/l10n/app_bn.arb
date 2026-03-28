@@ -9,5 +9,8 @@
   "wednesday" : "বুধ",
   "thursday" : "বৃহ",
   "friday" : "শুক্র",
-  "saturday" : "শনি"
+  "saturday" : "শনি",
+  "dashboard" : "ড্যাশবোর্ড",
+  "order" : "অর্ডার",
+  "product" : "প্রোডাক্ট"
 }

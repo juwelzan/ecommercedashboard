@@ -20,7 +20,7 @@ class AppConfig extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
       ],
       supportedLocales: [Locale('en'), Locale('bn')],
-      locale: Locale('bn'),
+      locale: Locale('en'),
       debugShowCheckedModeBanner: false,
       home: MainScreen(),
     );

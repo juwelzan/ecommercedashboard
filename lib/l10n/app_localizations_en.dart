@@ -40,4 +40,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get saturday => 'Sat';
+
+  @override
+  String get dashboard => 'Dashboard';
+
+  @override
+  String get order => 'Order';
+
+  @override
+  String get product => 'Product';
 }

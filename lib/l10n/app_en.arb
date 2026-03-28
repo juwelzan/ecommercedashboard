@@ -9,5 +9,8 @@
   "wednesday" : "Wed ",
   "thursday" : "Thu ",
   "friday" : "Fri  ",
-  "saturday" : "Sat"
+  "saturday" : "Sat",
+  "dashboard" : "Dashboard",
+  "order" : "Order",
+  "product" :"Product"
 }
